@@ -1,4 +1,6 @@
 package com.cj.kotlinstudy.test
 
-class Student(name: String, age: Int) : Person(name, age) {
+class Student:Person(){
+    var sno = ""
+    var grade = 0
 }
