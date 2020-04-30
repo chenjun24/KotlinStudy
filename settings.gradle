@@ -1,2 +1,2 @@
-include ':app', ':myrecyclerview', ':myfragment'
+include ':app', ':myrecyclerview', ':myfragment', ':mynotification'
 rootProject.name='KotlinStudy'
