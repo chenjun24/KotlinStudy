@@ -12,7 +12,10 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/myfragment" />
             <option value="$PROJECT_DIR$/mynotification" />
+            <option value="$PROJECT_DIR$/mypermission" />
+            <option value="$PROJECT_DIR$/mypermissionx" />
             <option value="$PROJECT_DIR$/myrecyclerview" />
+            <option value="$PROJECT_DIR$/mysunnyweather" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

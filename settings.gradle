@@ -1,2 +1,2 @@
-include ':app', ':myrecyclerview', ':myfragment', ':mynotification', ':algorithmdemo'
+include ':app', ':myrecyclerview', ':myfragment', ':mynotification', ':algorithmdemo', ':mypermission', ':mypermissionx', ':mysunnyweather'
 rootProject.name='KotlinStudy'

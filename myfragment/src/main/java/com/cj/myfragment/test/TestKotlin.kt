@@ -1,20 +1,27 @@
 package com.cj.myfragment.test
 
 fun main(){
-    StringBuilder().apply {
-        append("start")
-        append("end")
+//    StringBuilder().apply {
+//        append("start")
+//        append("end")
+//
+//    }
+//    test(::a)
+//    test { println("hahaha") }
+//    test1("heihei"){
+//        println(it)
+//    }
+//    test2(Complex(12.0,13.0)){
+//       // plus()
+//    }
+     val  ss =aa {
+         "hello"
+     }
+    println(ss)
+}
 
-    }
-    test(::a)
-    test { println("hahaha") }
-    test1("heihei"){
-        println(it)
-    }
-    test2(Complex(12.0,13.0)){
-       // plus()
-    }
-
+fun aa(block:(Int)->String):String{
+     return block(2)
 }
 
 fun a(){
@@ -28,4 +35,9 @@ fun test1(s:String,f:(String)->Unit){
 }
 fun test2(c:Complex,f:Complex.()->Unit){
     f(c)
+}
+
+inline fun <reified T> aa( a:T):T{
+
+    return a
 }

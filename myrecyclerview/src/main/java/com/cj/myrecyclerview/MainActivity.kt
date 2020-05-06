@@ -2,6 +2,7 @@ package com.cj.myrecyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cj.myrecyclerview.adapter.MyAdapter
 import com.cj.myrecyclerview.model.Fruit
@@ -18,6 +19,11 @@ class MainActivity : AppCompatActivity() {
         rv.layoutManager = layoutManager
         val adapter = MyAdapter(fruitList)
         rv.adapter = adapter
+        rv.setOnClickListener(fun(v:View):Unit{})
+        rv.setOnClickListener({v:View->})
+        rv.setOnClickListener(){v:View->}
+        rv.setOnClickListener{v:View->}
+        rv.setOnClickListener{}
     }
 
     private fun initFruits() {
@@ -33,4 +39,6 @@ class MainActivity : AppCompatActivity() {
             fruitList.add(Fruit("mango",R.drawable.mango_pic))
         }
     }
+
+
 }
