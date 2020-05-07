@@ -41,3 +41,12 @@ inline fun <reified T> aa( a:T):T{
 
     return a
 }
+inline fun<reified T> ff(){
+    fff(T::class.java)
+}
+
+fun<T> fff(serviceClass:Class<T>){
+
+}
+
+

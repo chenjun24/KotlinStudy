@@ -26,7 +26,7 @@ class MainActivity : BaseActivity() {
 //            }
 //        })
         btn1.setOnClickListener{
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
             Toast.makeText(this,"jump to second activity",Toast.LENGTH_LONG).show()
 
 
