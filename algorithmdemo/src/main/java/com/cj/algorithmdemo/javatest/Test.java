@@ -15,16 +15,16 @@ public class Test {
      *     keys排序好的 arrayMap是 keys的hashcode()值  通过二分查找
      * @return
      */
-    private static int binarySearch(int[] aar,int value){
+    private static int binarySearch(int[] arr,int value){
       int index = -1;
       int start = 0;
-      int end  = aar.length;
+      int end  = arr.length;
       int mid = (start+end)/2;
       while(start<end){
-          if(value == aar[mid]){
+          if(value == arr[mid]){
               index = mid;
               break;
-          }else if(value > aar[mid]){
+          }else if(value > arr[mid]){
               start = mid+1;
           }else{
               end = mid;

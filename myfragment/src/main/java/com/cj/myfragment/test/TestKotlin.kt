@@ -18,7 +18,16 @@ fun main(){
          "hello"
      }
     println(ss)
+    dependencies {
+
+    }
 }
+fun dependencies(block: Dependency.()->Unit):List<String>{
+    val dependency = Dependency()
+    dependency.block()
+    return dependency.libraries
+}
+
 
 fun aa(block:(Int)->String):String{
      return block(2)
