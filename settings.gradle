@@ -1,2 +1,2 @@
-include ':app', ':myrecyclerview', ':myfragment', ':mynotification', ':algorithmdemo', ':mypermission', ':mypermissionx', ':mysunnyweather'
+include ':app', ':myrecyclerview', ':myfragment', ':mynotification', ':algorithmdemo', ':mypermission', ':mypermissionx', ':mysunnyweather', ':testservice', ':mykotlinapplication'
 rootProject.name='KotlinStudy'

@@ -97,5 +97,10 @@ fun main(){
             TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             println("thread is running")
     }.start()
-
+   ff()
 }
+fun ff() = print(5)
+fun ff2() = print(5)
+//fun ff3() :Int= print(5)
+fun ff1() :Int = 9
+fun ff5() :Unit = println(7)

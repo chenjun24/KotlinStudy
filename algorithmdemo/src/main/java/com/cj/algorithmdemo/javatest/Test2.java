@@ -25,6 +25,7 @@ public class Test2 {
     public static void main(String[] args){
       int[] arr = {2, 3, 1, 0, 2, 5, 3};
       System.out.println(findRepeatNumber(arr));
+      System.out.println(findRepeatNumber1(arr));
     }
 
    public static int findRepeatNumber(int[] arr){
@@ -37,4 +38,24 @@ public class Test2 {
        return -1;
    }
 
+    /**
+     * 2,3,1,0, 2, 5, 3
+     * 1,3,2,0, 2, 5, 3
+     * 3,1,2,0, 2, 5, 3
+     * 0,1,2,3, 2, 5, 3
+     *
+     */
+    public static int findRepeatNumber1(int[] arr){
+        for (int i=0;i<arr.length;i++){
+            while(i!=arr[i]){
+                int temp = arr[arr[i]];
+                if (temp == arr[i]){//找到重复的
+                    return temp;
+                }
+                arr[arr[i]] = arr[i];
+                arr[i] = temp;
+            }
+        }
+        return -1;
+    }
 }
